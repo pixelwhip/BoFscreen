@@ -1,6 +1,6 @@
 #DrupalCon Denver 2012: Birds of a Feather Displays
 
-Node.js app to scrape the [Drupalcon Denver 2012 BoF lists][dcdtownbof] and create a scrolling display for the various rooms.
+Node.js app to scrape the [Drupalcon Denver 2012 BoF lists][dcondtownbof] and create a scrolling display for the various rooms.
 
 Original issue can be found [here][issue].
 
