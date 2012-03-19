@@ -5,9 +5,9 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , httpAgent = require('http-agent'),
-  , jsdom = require(jsdom).jsdom
-  , host = 'denver2012.drupal.org',
+  , httpAgent = require('http-agent')
+  , jsdom = require('jsdom').jsdom
+  , host = 'denver2012.drupal.org'
   , urls = ['bofs', 'bofs/2012-03-21', 'bofs/2012-03-22'];
 
 var app = module.exports = express.createServer();
@@ -46,7 +46,11 @@ function bofScrape() {
       , $ = require('jquery').create(window);
 
     // Now we can use jQuery to grab some DOM elements.
-
+    var start_times = $('.date-display-start')
+    , end_times = $('.date-display-end')
+    , bof_titles = $('h3.session-title')
+    , bof_categories = $('.views-field-field-bof-category')
+    , bof_rooms = $('views-field-field-session-room');
 
     agent.next();
   });
